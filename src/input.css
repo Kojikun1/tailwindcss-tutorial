@@ -1,0 +1,30 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+@layer components {
+    .btn-primary {
+        @apply bg-blue-300 text-white px-4 py-2 rounded hover:ring-2 hover:bg-blue-200;
+    }
+    .btn-primary-small {
+        @apply px-4 py-2 bg-blue-400 rounded hover:bg-blue-500 text-white shadow-lg;
+    }
+    .btn-primary-medium {
+        @apply px-6 py-3 bg-blue-400 rounded hover:bg-blue-500 text-white shadow-lg;
+    }
+    .btn-primary-large {
+        @apply px-8 py-4 bg-blue-400 rounded hover:bg-blue-500 text-white shadow-lg;
+    }
+    .badge-active {
+         @apply inline-flex items-center bg-green-400 py-0.5 px-1.5 rounded text-green-800 text-sm font-medium;
+    }
+    .badge-inactive {
+        @apply inline-flex items-center bg-red-400 py-0.5 px-1.5 rounded text-red-800 text-sm font-medium;
+    }
+    .badge-progress {
+       @apply inline-flex items-center bg-yellow-400 py-0.5 px-1.5 rounded text-yellow-800 text-sm font-medium;
+    }
+}

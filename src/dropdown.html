@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container m-4">
+        <div class="relative w-20 group/first-menu">
+        <div id="menu-dropdown" class="p-2 border-2 border-gray-400 shadow-lg rounded flex justify-center cursor-pointer">
+            <p>Menu</p>
+            <svg  id="chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+              </svg>
+            <svg id="chevron-up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+              </svg>
+        </div>
+        <div id="sub-menu" class="w-44 flex flex-col invisible absolute bg-white group-hover/first-menu:visible">
+            <a class="w-full p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 1</a>
+            <a class="w-full p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 2</a>
+            <a class="w-full p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 3</a>
+            <div class="group w-full p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400 relative flex items-center" href="">
+                Link 4
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" 
+                     class="ml-4 w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>                  
+                <div class="flex-col absolute -right-44 top-0 flex invisible group-hover:visible">
+                    <a class="w-44 p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 1</a>
+                    <a class="w-44 p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 2</a>
+                    <a class="w-44 p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 3</a>
+                    <a class="w-44 p-2 border-2 border-gray-400 shadow-lg rounded hover:bg-gray-400" href="">Link 4</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente deserunt nulla voluptatum distinctio quisquam cumque rem maiores. Deleniti nam aliquid voluptates dolores, magnam libero est accusantium pariatur hic repudiandae ducimus!
+        </div>
+        <script>
+             let menu = document.querySelector('#menu-dropdown');
+             menu.addEventListener('click', function(){
+                let up = document.querySelector('#chevron-up');
+                let down = document.querySelector('#chevron-down');
+                let sub_menu = document.querySelector('#sub-menu');
+                
+                if(sub_menu.classList.contains('invisible')){
+                    down.classList.add('hidden');
+                    up.classList.remove('hidden');
+                    sub_menu.classList.remove('invisible');
+                }else{
+                    down.classList.remove('hidden');
+                    up.classList.add('hidden');
+                    sub_menu.classList.add('invisible');
+                }
+             });
+        </script>
+</body>
+</html>

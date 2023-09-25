@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-600">
+    <!-- header -->
+    <header>
+        <div class="container mx-auto px-4 h-24 flex items-center justify-between">
+           <div class="font-black">
+            LOGO
+           </div>
+           <ul class="hidden flex-row space-x-4 sm:flex">
+            <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Como reservar</a></li>
+            <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Sobre nós</a></li>
+            <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Informações</a></li>
+            <li><a href="" class="text-sm text-gray-600 hover:text-gray-800 hover:underline">Contato</a></li>
+           </ul>
+           <div class="relative w-20 group/first-menu sm:hidden">
+            <div id="menu-dropdown" class="p-2 border-2 border-gray-400 shadow-lg rounded flex justify-center cursor-pointer">
+                <p>Menu</p>
+                <svg  id="chevron-down" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                  </svg>
+                <svg id="chevron-up" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                  </svg>
+            </div>
+            <div id="sub-menu" class="w-44 flex flex-col invisible absolute bg-white right-0 border border-gray-400 rounded">
+                <a class="w-full p-2 border border-gray-400 hover:bg-gray-400" href="">Como reservar</a>
+                <a class="w-full p-2 border border-gray-400 hover:bg-gray-400" href="">Sobre nós</a>
+                <a class="w-full p-2 border border-gray-400 hover:bg-gray-400" href="">Informações</a>
+                <a class="w-full p-2 border border-gray-400 hover:bg-gray-400" href="">Contato</a>
+            </div>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <!-- banner -->
+    <div style="background-image: url('../img/hero-image-1.png'); height: 450px;">
+       <div class="container mx-auto px-4 h-full flex items-center justify-center flex-col">
+           <div class="text-center">
+              <h1 class="text-gray-100 text-3xl mb-2">Onde Você quer ir ?</h1>
+              <p class="text-green-100">Escolha o estado e cidade para achar os melhores resorts.</p>
+           </div>
+           <div class="w-full m-8">
+            <form action="" class="flex flex-col space-y-4 sm:space-x sm:flex-row sm:space-y-0 sm:space-x-4 justify-center">
+                <select name="Estado" id="" class="bg-gray-50 py-3 px-2 border rounded text-gray-500">
+                  <option value="">Escolha um estado</option>
+                </select>
+                <select name="Cidade" id="" class="bg-gray-50 py-3 px-2 border rounded text-gray-500">
+                    <option value="">Escolha uma Cidade</option>
+                </select>
+                <button class="bg-yellow-500 text-yellow-900 font-medium py-3 px-2 inline-flex items-center rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 mr-2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>                      
+                    Pesquisar resorts
+            </button>
+            </form>
+           </div>
+       </div>
+    </div>
+    <!-- banner -->
+    <div class="container mx-auto px-4 py-10">
+       <div class="flex flex-col-reverse lg:flex-row">
+           <div class="pb-10 pr-10">
+             <div class="space-y-2">
+                <div class="text-sm text-gray-400 font-medium">RESORT EM DESTAQUE</div>
+                <div class="text-2xl">Ecoresort Praia do Forte Bahia</div>
+                <div class="text-sm text-gray-400 font-medium">Hotel Qualidade 5 estrelas</div>
+             </div>
+              <div class="mt-8">
+                <p class="mb-2 text-sm text-gray-400 font-medium">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores atque quis vero cum, a tenetur perspiciatis unde ipsa minus recusandae aperiam. Earum, alias debitis illum nisi dignissimos hic voluptas dicta!</p>
+                <p class="text-sm text-gray-400 font-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quam repellat quod, temporibus cupiditate molestias quae praesentium modi consequuntur at. Ratione, ullam optio amet vitae quam aspernatur distinctio est expedita?</p>
+              </div>
+               <div class="mt-4">
+                <button class="bg-yellow-500 text-yellow-900 font-medium py-3 px-2 inline-flex items-center rounded">               
+                    Solicitar reserva
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-4 w-4 h-4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>                      
+                </button>
+               </div>
+           </div>
+           <div class="lg:ml-auto flex-shrink-0">
+              <img src="../img/featured-img.png" alt="" width="450">
+           </div>
+       </div>
+    </div>
+    <div>
+        <div class="container mx-auto px-4">
+            <div class="text-2xl font-medium text-gray-500 text-center mb-8">
+                Conheça mais resorts
+            </div>
+            <div class="md:grid md:grid-cols-4 md:grid-rows-2 md:gap-4 space-y-4 h-60 md:h-max md:space-y-0">
+               <div class="relative md:row-span-2 md:col-span-2">
+                  <div class="absolute bottom-0 text-white pl-4 pb-2 z-20">Beach Park Resort</div>
+                  <div class="absolute bottom-0 left-0 right-0 z-10">
+                    <img src="../img/image-shadow.png" alt="" class="h-10">
+                  </div>
+                  <img src="../img/hotel-1.jpeg" alt="" class="w-full h-full object-cover">
+               </div>
+               <div class="relative md:col-span-2  md:h-60">
+                <div class="absolute bottom-0 text-white pl-4 pb-2 z-20">Salinas do Maragogi Resort</div>
+                  <div class="absolute bottom-0 left-0 right-0 z-10" >
+                    <img src="../img/image-shadow.png" alt="" class="h-10">
+                  </div>
+                <img src="../img/hotel-2.jpeg" alt="" class="w-full h-full object-cover">
+               </div>
+               <div class="relative">
+                <div class="absolute bottom-0 text-white pl-4 pb-2 z-20">Grand Palladium</div>
+                <div class="absolute bottom-0 left-0 right-0 z-10">
+                  <img src="../img/image-shadow.png" alt="" class="h-10">
+                </div>
+                <img src="../img/hotel-3.jpeg" alt="" class="w-full h-full object-cover">
+               </div>
+               <div class="relative">
+                <div class="absolute bottom-0 text-white pl-4 pb-2 z-20">Arraial d'Ajuda Eco Resort</div>
+                <div class="absolute bottom-0 left-0 right-0 z-10">
+                  <img src="../img/image-shadow.png" alt="" class="h-10">
+                </div>
+                <img src="../img/hotel-4.jpeg" alt="" class="w-full h-full object-cover">
+               </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+
+    </footer>
+    <script>
+        let menuDropdown = document.querySelector("#menu-dropdown");
+        let subMenu = document.querySelector("#sub-menu");
+
+        menuDropdown.addEventListener('click', function(){
+            if(subMenu.classList.contains("invisible")){
+                subMenu.classList.remove('invisible');
+            }else {
+                subMenu.classList.add('invisible');
+            }
+        });
+    </script>
+</body>
+</html>
